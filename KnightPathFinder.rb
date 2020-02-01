@@ -39,6 +39,13 @@ class KnightPathFinder
             end
         end
     end
+
+    def find_path(end_pos)
+        valid_pos?(end_pos)
+    end
+
+    def trace_path_back
+    end
     
     private
     
