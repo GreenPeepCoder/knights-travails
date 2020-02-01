@@ -26,10 +26,9 @@ class KnightPathFinder
     end
 
     def build_move_tree
-        root_node = PolyTreeNode.new(@root_node.value)
         
         # build tree out in bfs style
-        nodes = [root_node]
+        nodes = [@root_node]
         until nodes.empty?
             curr_node = nodes.shift
             curr_pos = curr_node.value
